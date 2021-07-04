@@ -1,0 +1,78 @@
+﻿Cấu trúc có dạng như sau:
+<b:if cond='Điều kiện'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
+
+Các thẻ điều kiện của Blogger
+
+1. Thẻ điều kiện chỉ có tác dụng tại trang chủ:
+
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
+
+2. Thẻ điều kiện cho trang chủ, trang search label, trang archive:
+
+<b:if cond='data:blog.pageType == "index"'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
+
+3. Thẻ điều kiện cho bài viết.
+
+<b:if cond='data:blog.pageType == "item"'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
+
+4. Thẻ điều kiện cho trang tĩnh:
+
+<b:if cond='data:blog.pageType == "static_page"'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
+
+5. Thẻ điều kiện cho trang lưu trữ:
+
+<b:if cond='data:blog.pageType == "archive"'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
+
+6. Thẻ điều kiện cho URL nhất định:
+
+<b:if cond='data:blog.url == "URL nhất định"'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
+
+7. Thẻ điều kiện cho Page và Post:
+
+<b:if cond='data:blog.url == data:post.url'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
+
+8. Thẻ điều kiện cho tất cả Label:
+
+<b:if cond='data:blog.searchLabel'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
+
+9. Thẻ điều kiện cho Label nhất định
+
+<b:if cond='data:blog.searchLabel == &quot;Tên nhãn&quot;'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
+
+10. Hiển thị nội dung cho bài viết đầu tiên tại trang chủ
+
+<b:if cond='data:post.isFirstPost'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
+
+11. Thẻ điều kiện cho mobile:
+
+<b:if cond='data:blog.pageType == "data:blog.isMobile"'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
+
+12. Thẻ điều kiện cho trang báo lỗi 404
+
+<b:if cond='data:blog.pageType == "error_page"'>
+    Code, file Js, CSS hoặc nội dung tùy chỉnh
+</b:if>
